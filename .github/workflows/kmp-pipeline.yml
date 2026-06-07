@@ -61,7 +61,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Run iOS Unit Tests
-        run: ./gradlew :shared:iosSimulatorArm64Test
+        run: ./gradlew :shared:iosSimulatorArm64Test --stacktrace --info
 
       - name: Build iOS App (Simulator Debug)
         run: |
