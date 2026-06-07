@@ -8,3 +8,7 @@ struct iOSApp: App {
         }
     }
 }
+
+// Stub for resolving linking error on older Xcode SDKs
+@objc(UIViewLayoutRegion)
+class UIViewLayoutRegion: NSObject {}
